@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+body, html, app-root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* BELOW IS A TEMPORARY SOLUTION BECAUSE /GLOBAL/APP.CSS IS NOT GETTING INCLUDED IN THE DIST FOLDER FOR THE STENCIL LIBRARY */
+  :root {
+    --primary-color: #0C2F50;
+    --secondary-color: #344861;
+    --accent-color: #d6dadf;
+    /* ... other variables */
+  }
+
+
+  

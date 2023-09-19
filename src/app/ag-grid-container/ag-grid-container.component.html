@@ -1,0 +1,39 @@
+<!-- app-ag-grid-container.component.html -->
+<div>
+    <div class="wrapper">
+      <!-- <div class="titleWrapper">
+        <unity-typography variant="h3">Ag Grid Angular Component</unity-typography>
+      </div> -->
+    </div>
+<!-- 
+    (handleFormSubmit)="handleFormSubmit(name, isPrivate, columnState)" -->
+  
+    <ambient-tempalte-grid
+      [columnDefs]="columnDefs"
+      [rowData]="rowData"
+      (handleButtonClick)="handleButtonClick($event)"
+      [viewListrowData]="viewListrowData"
+      (handleFormSubmit)="this.handleFormSubmit($event)"
+
+    
+      
+      
+    >
+    </ambient-tempalte-grid>
+  
+    <fluent-dialog
+      title="Sample Dialog"
+      message="This is a message."
+   
+      labelOne="Confirm"
+      labelTwo="Cancel"
+      [open]="dialogOpen"
+    >
+      <div>Here is some dialog content...</div>
+    </fluent-dialog>
+
+    <custom-button (click)="testButton()">Test Button</custom-button>
+
+
+  </div>
+  
